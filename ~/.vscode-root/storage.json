@@ -4,7 +4,9 @@
         "workspaces3": [
             "file:///home/carlomigueldy/myprojects/tinker"
         ],
-        "files2": []
+        "files2": [
+            "file:///home/carlomigueldy/myprojects/leaflet-draw-tinker/leaflet.html"
+        ]
     },
     "lastKnownMenubarData": {
         "menus": {
@@ -56,6 +58,20 @@
                                     },
                                     "enabled": true,
                                     "label": "~/myprojects/tinker"
+                                },
+                                {
+                                    "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/carlomigueldy/myprojects/leaflet-draw-tinker/leaflet.html",
+                                        "path": "/home/carlomigueldy/myprojects/leaflet-draw-tinker/leaflet.html",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/myprojects/leaflet-draw-tinker/leaflet.html"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -373,7 +389,8 @@
                                 },
                                 {
                                     "id": "workbench.action.togglePanel",
-                                    "label": "Show &&Panel"
+                                    "label": "Show &&Panel",
+                                    "checked": true
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -824,8 +841,7 @@
                     },
                     {
                         "id": "workbench.action.terminal.split",
-                        "label": "&&Split Terminal",
-                        "enabled": false
+                        "label": "&&Split Terminal"
                     },
                     {
                         "id": "vscode.menubar.separator"
