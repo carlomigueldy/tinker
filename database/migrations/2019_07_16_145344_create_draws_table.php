@@ -15,8 +15,8 @@ class CreateDrawsTable extends Migration
     {
         Schema::create('draws', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->geometry('coordinates');
-            $table->geometryCollection('coordinatesCollection');
+            $table->json('coordinates');
+            // $table->geometryCollection('coordinatesCollection');
             $table->timestamps();
         });
     }
