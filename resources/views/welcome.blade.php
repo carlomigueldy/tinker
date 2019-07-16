@@ -50,22 +50,24 @@
                 layer = e.layer;
             drawnItems.addLayer(layer);
 
-            var shape = layer.toGeoJSON()
-            var shape_for_db = JSON.stringify(shape);
+            // var shape = layer.toGeoJSON()
+            // var shape_for_db = JSON.stringify(shape);
 
-            console.log(shape_for_db);
-            
+            // console.log(shape_for_db);
+            // console.log(shape);
+
             if(type == 'polygon' || type == 'rectangle')
             {
-                // Take the coordinates from the recently drawn object
-                console.log(JSON.stringify(layer.getLatLngs().map(function(point) {
-                        // window.location.href = "{{ route('drawings.store'," + [point.lat, point.lng] + ") }}";
-                        // return route('drawings.store', [point.lat, point.lng]);
-                        return [point.lat, point.lng];  
+                // Take the coordinates [lat, lng] from the recently drawn object
+                var coordinates = (JSON.stringify(layer.getLatLngs().map(function(point) {
+                        return ([point.lat, point.lng]);  
                     })
                 ));
             }
+
+            console.log(coordinates);
         });
+
     </script>
 </body>
 </html>
