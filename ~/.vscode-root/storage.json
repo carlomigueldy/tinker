@@ -543,8 +543,7 @@
                 "items": [
                     {
                         "id": "workbench.action.navigateBack",
-                        "label": "&&Back",
-                        "enabled": false
+                        "label": "&&Back"
                     },
                     {
                         "id": "workbench.action.navigateForward",
@@ -553,8 +552,7 @@
                     },
                     {
                         "id": "workbench.action.navigateToLastEditLocation",
-                        "label": "&&Last Edit Location",
-                        "enabled": false
+                        "label": "&&Last Edit Location"
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -1369,6 +1367,10 @@
             "workbench.action.terminal.split": {
                 "label": "Ctrl+Shift+5",
                 "userSettingsLabel": "ctrl+shift+5"
+            },
+            "workbench.action.tasks.build": {
+                "label": "Ctrl+Shift+B",
+                "userSettingsLabel": "ctrl+shift+b"
             },
             "workbench.action.keybindingsReference": {
                 "label": "Ctrl+K Ctrl+R",
