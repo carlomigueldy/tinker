@@ -1400,5 +1400,19 @@
         }
     },
     "theme": "vs-dark",
-    "themeBackground": "#1e1e1e"
+    "themeBackground": "#1e1e1e",
+    "windowsState": {
+        "lastActiveWindow": {
+            "folder": "file:///home/carlomigueldy/myprojects/tinker",
+            "backupPath": "/home/carlomigueldy/myprojects/tinker/~/.vscode-root/Backups/c9c7902eeda5641b262a601587e0218b",
+            "uiState": {
+                "mode": 0,
+                "x": 0,
+                "y": 55,
+                "width": 1366,
+                "height": 680
+            }
+        },
+        "openedWindows": []
+    }
 }
