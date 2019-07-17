@@ -45,27 +45,28 @@
         });
         map.addControl(drawControl);
 
+        // Take the coordinates [lat, lng] from the recently drawn object
         map.on('draw:created', function (e) {
             var type = e.layerType,
                 layer = e.layer;
             drawnItems.addLayer(layer);
 
-            // var shape = layer.toGeoJSON()
-            // var shape_for_db = JSON.stringify(shape);
-
-            // console.log(shape_for_db);
-            // console.log(shape);
-
-            if(type == 'polygon' || type == 'rectangle')
-            {
-                // Take the coordinates [lat, lng] from the recently drawn object
+            if(type == 'polygon' || type == 'rectangle') {
                 var coordinates = (JSON.stringify(layer.getLatLngs().map(function(point) {
                         return ([point.lat, point.lng]);  
                     })
                 ));
+
+                console.log(coordinates);
             }
 
-            console.log(coordinates);
+            if (type == 'marker') {
+                var lat = layer.getLatLng().lat;
+                var lng = layer.getLatLng().lng;
+
+                console.log("Latitude: " + lat + " | Longitude: " + lng);
+            }
+
         });
 
     </script>
